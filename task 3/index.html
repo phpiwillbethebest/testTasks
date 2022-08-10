@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple One Page Blog</title>
+</head>
+<body>
+
+<header class="header">
+    <img src="img/encomage_logo.png" alt="logo" class="header-logo">    
+</header>
+
+<main class="main-content">
+
+<div class="counter-wrapper">
+    <h2 class="counter-title">COUNTER</h2>
+    <div class="counter-blocks">
+        <div class="counter-item">
+            <p class="count-negative">20</p>
+            <p class="counter-text">Negative Posts</p>
+        </div>
+        <div class="counter-item">
+            <p class="count-all">40</p>
+            <p class="counter-text">All Posts</p>
+        </div>
+        <div class="counter-item">
+            <p class="count-positive">20</p>
+            <p class="counter-text">Positive Posts</p>
+        </div>
+    </div>
+</div>
+
+<div class="posts-wrapper">
+    <h2 class="posts-title">POSTS</h2>
+    <div class="btn-wrap">
+        <button class="add-post-btn btn-style">Add Post</button>
+    </div>
+
+    <form method="POST" class="post-form-style">
+        <input type="text" name="post-name-iput" class="post-name-input" placeholder="Enter your name">
+        <textarea name="post-text-input" class="post-text-input" placeholder="Your text goes here"></textarea>
+        <div class="btn-wrap">
+            <button type="submit" class="btn-add-new-post btn-style">Confirm</button>
+        </div>
+    </form>
+
+    <div class="published-post-wrap">
+        <div class="user-add-comment">
+            <p class="user-name">by user1</p>
+            <button class="btn-add-comment btn-style">Add Comment</button>
+        </div>
+        <p class="published-post-text">This is the text of the post by user 1.</p>
+        <div class="published-post-starsdate">
+            <p class="star-rating">☆☆☆☆☆</p>
+            <p class="date">02.05.2022</p>
+        </div>
+    </div>
+
+    <form method="POST" class="post-form-style-comment">
+        <input type="text" name="comment-name-iput" class="post-name-input" placeholder="Enter your name">
+        <textarea name="comment-text-input" class="post-text-input" placeholder="Your comment goes here"></textarea>
+        <div class="btn-wrap">
+            <button type="submit" class="btn-add-new-comment btn-style">Confirm</button>
+        </div>
+    </form>
+
+</div>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

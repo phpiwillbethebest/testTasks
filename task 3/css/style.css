@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --border-col: black;
+    --count-bg: #c3e3db;
+    --title-col: #405c6e;
+    --button-bg: #405c6e;
+    --button-col: white;
+    --button-hov: #2c404d;
+}
+
+/* logo */
+.header {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 200px;
+}
+
+/* main config */
+
+.main-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* counter block */
+.counter-title, .counter-item, .posts-title {
+    text-align: center;
+    color: var(--title-col);
+}
+
+.counter-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.counter-item {
+    width: 120px;
+    display: block;
+    background-color: var(--count-bg);
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* post block */
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.btn-style {
+    width: 120px;
+    border: none;
+    color: var(--button-col);
+    background-color: var(--button-bg);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.btn-style:hover {
+    background-color: var(--button-hov);
+}
+
+.post-form-style, .post-form-style-comment {
+    display: none;
+    flex-direction: column;
+    border: 1px solid var(--border-col);
+    margin: 10px 0;
+}
+
+.post-name-input, .post-text-input {
+    padding: 8px;
+    border: 1px solid var(--border-col);
+    border-radius: 0;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.post-text-input {
+    margin-top: 0;
+    resize: none;
+}
+
+.published-post-wrap {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-col);
+    padding: 5px;
+}
+
+.user-add-comment, .published-post-starsdate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.show {
+    display: flex;
+}
+
